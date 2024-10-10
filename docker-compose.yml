@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:80"  # Expose the Nginx server on port 3000
+    volumes:
+      - .:/app  # Optional: mount the current directory to the container for development
